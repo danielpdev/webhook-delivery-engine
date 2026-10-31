@@ -6,6 +6,12 @@ Signed delivery with retries, deduplication and a dead-letter queue.
 
 **Role focus:** Backend Reliability / Integrations. **Status:** working local portfolio implementation, with synthetic data.
 
+## Demo
+
+![How Webhook Delivery Engine works](docs/demo.gif)
+
+Edited replay of captured CLI outputs in deterministic fixture mode. This is not live model inference. [Full recording](docs/demo.mp4). Rebuild with `./scripts/render_gif.sh` (FFmpeg required).
+
 ## The engineering decision
 
 The outbox claims an event with a lease, signs its ID, timestamp and exact bytes, then retries with bounded exponential delay. The receiver persists a unique event ID and payload hash.

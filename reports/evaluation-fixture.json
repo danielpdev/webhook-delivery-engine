@@ -1,0 +1,31 @@
+{
+  "mode": "fixture",
+  "python": "3.12.13",
+  "recorded_at": "2026-10-31T13:50:39.939392+00:00",
+  "elapsed_seconds": 0.0129,
+  "result": {
+    "passed": true,
+    "scenario": {
+      "outage": {
+        "id": "invoice-42",
+        "state": "retry",
+        "attempts": 1,
+        "error": "HTTP 503"
+      },
+      "recovery": {
+        "id": "invoice-42",
+        "state": "delivered",
+        "attempts": 2,
+        "error": null
+      },
+      "events": [
+        {
+          "id": "invoice-42",
+          "state": "delivered",
+          "attempts": 2,
+          "error": null
+        }
+      ]
+    }
+  }
+}

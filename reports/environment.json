@@ -2,7 +2,7 @@
   "python": "3.12.13",
   "platform": "macOS-27.0.1-arm64-arm-64bit",
   "hardware": "Apple M4, 16 GiB RAM",
-  "fixture_tests_passed": 4,
+  "fixture_tests_passed": 5,
   "postgres_test_skipped_in_default_run": 1,
   "fixture_evaluation_passed": true,
   "ollama_version": "0.40.13",
